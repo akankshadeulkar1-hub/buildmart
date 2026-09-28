@@ -1,0 +1,15 @@
+{
+  "name": "buildmart",
+  "version": "1.0.0",
+  "description": "BuildMart - Full-Stack Heavy Building Materials & Construction Supplies Platform",
+  "scripts": {
+    "dev:backend": "node backend/server.js",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start": "node backend/server.js",
+    "build:frontend": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
